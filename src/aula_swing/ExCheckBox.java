@@ -3,13 +3,13 @@ package aula_swing;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class Exemplo5 extends JFrame implements ActionListener {
+public class ExCheckBox extends JFrame implements ActionListener {
     
     JLabel l;
     JCheckBox cb1, cb2, cb3;
     JButton b;
     
-    Exemplo5(){
+    ExCheckBox(){
         l = new JLabel("Sistema de Pedidos: ");
         l.setBounds(50, 50, 300, 20);
         cb1 = new JCheckBox("Pizza R$ 60: ");
@@ -22,7 +22,6 @@ public class Exemplo5 extends JFrame implements ActionListener {
         b.setBounds(100, 250, 80, 30);
         b.addActionListener(this);
         
-        //setDefaultCloseOperation(EXIT_ON_CLOSE);
         add(l);add(cb1);add(cb2);add(cb3);add(b);
         setSize(400, 400);
         setLayout(null);

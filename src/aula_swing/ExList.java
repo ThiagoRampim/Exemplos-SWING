@@ -3,12 +3,12 @@ package aula_swing;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class Exemplo9 extends JFrame implements ActionListener {
+public class ExList extends JFrame implements ActionListener {
     
     JList<String> list1, list2;
     JLabel label;
     
-    Exemplo9(){
+    ExList(){
         
         label = new JLabel();
         label.setSize(500, 100);
@@ -30,7 +30,6 @@ public class Exemplo9 extends JFrame implements ActionListener {
         list2.setBounds(100, 200, 75, 75);
         b.addActionListener(this);
         
-        //setDefaultCloseOperation(EXIT_ON_CLOSE);
         add(list1); add(list2); add(b); add(label);
         setSize(500, 500);
         setLayout(null);

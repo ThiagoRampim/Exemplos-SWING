@@ -1,14 +1,14 @@
-    package aula_swing;
+package aula_swing;
 
 import java.awt.event.*;
 import javax.swing.*;
 
-public class Exemplo6 extends JFrame implements ActionListener {
+public class ExRadioButton extends JFrame implements ActionListener {
     
     JRadioButton rb1, rb2;
     JButton b;
     
-    Exemplo6(){
+    ExRadioButton(){
         rb1 = new JRadioButton("Maculino");
         rb1.setBounds(70, 50, 100, 30);
         rb2 = new JRadioButton("Feminino");
@@ -19,7 +19,6 @@ public class Exemplo6 extends JFrame implements ActionListener {
         b.setBounds(70, 150, 150, 30);
         b.addActionListener(this);
         
-        //setDefaultCloseOperation(EXIT_ON_CLOSE);
         add(rb1); add(rb2); add(b);
         setSize(300, 300);
         setLayout(null);

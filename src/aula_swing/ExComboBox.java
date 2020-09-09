@@ -3,12 +3,12 @@ package aula_swing;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class Exemplo7 extends JFrame implements ActionListener {
+public class ExComboBox extends JFrame implements ActionListener {
     
     JLabel l;
     JComboBox cb;
     
-    Exemplo7(){
+    ExComboBox(){
         l = new JLabel();
         l.setHorizontalAlignment(JLabel.LEFT);
         l.setSize(400, 50);
@@ -19,7 +19,6 @@ public class Exemplo7 extends JFrame implements ActionListener {
         cb = new JComboBox(linguagens);
         cb.setBounds(50, 100, 90, 20);
         
-        //setDefaultCloseOperation(EXIT_ON_CLOSE);
         add(cb); add(l); add(b);
         setLayout(null);
         setSize(350, 350);

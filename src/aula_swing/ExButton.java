@@ -2,14 +2,13 @@ package aula_swing;
 
 import java.awt.event.*;
 import javax.swing.*;
-import static javax.swing.JFrame.*;
 
 
-public class Exemplo1 extends JFrame implements ActionListener {
+public class ExButton extends JFrame implements ActionListener {
     
     JButton b;
     
-    Exemplo1(){
+    ExButton(){
         JButton b = new JButton("Clique aqui");
         b.setBounds(130, 100, 100, 40);
         b.addActionListener(this);
@@ -22,7 +21,6 @@ public class Exemplo1 extends JFrame implements ActionListener {
     
     @Override
     public void actionPerformed(ActionEvent ae){
-        //System.exit(0);
         dispose();
     }
 }

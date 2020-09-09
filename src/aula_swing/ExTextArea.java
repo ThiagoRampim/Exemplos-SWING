@@ -3,13 +3,13 @@ package aula_swing;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class Exemplo3 implements ActionListener {
+public class ExTextArea implements ActionListener {
     
     JLabel l1, l2;
     JTextArea area;
     JButton b;
     
-    public Exemplo3(){
+    public ExTextArea(){
         JFrame f = new JFrame();
         l1 = new JLabel();
         l1.setBounds(50,25,100,30);

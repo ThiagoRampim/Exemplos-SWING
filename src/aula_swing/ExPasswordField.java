@@ -3,13 +3,13 @@ package aula_swing;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class Exemplo4 extends JFrame implements ActionListener {
+public class ExPasswordField extends JFrame implements ActionListener {
     
     JTextField login;
     JPasswordField senha;
     JLabel texto;
     
-    Exemplo4(){
+    ExPasswordField(){
         texto = new JLabel();
         texto.setBounds(20, 150, 300, 50);
         senha = new JPasswordField();
@@ -24,7 +24,6 @@ public class Exemplo4 extends JFrame implements ActionListener {
         login = new JTextField();
         login.setBounds(100, 20, 100, 30);
         
-        //setDefaultCloseOperation(EXIT_ON_CLOSE);
         add(senha); add(l1); add(texto); add(l2); add(b); add(login);
         setSize(300, 300);
         setLayout(null);
